@@ -1,0 +1,25 @@
+﻿<Window x:Class="NavigationPanel.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:OfficeControls="clr-namespace:OfficeControls;assembly=OfficeControls"
+        xmlns:inf="clr-namespace:Infrastructure;assembly=Infrastructure"
+        xmlns:local="clr-namespace:NavigationPanel"
+        xmlns:prism="http://prismlibrary.com/"
+        mc:Ignorable="d"
+        Title="Shell" Height="450" Width="800">
+    <Grid>
+        <!--Hard Coding Works -->
+        <OfficeControls:NavigationPanel>
+            <OfficeControls:NavigationSection Header="Mail" />
+            <OfficeControls:NavigationSection Header="Contact" />
+        </OfficeControls:NavigationPanel>
+
+        <!--Dont Work TODO : FIX-->
+        <!--<OfficeControls:NavigationPanel Width="250"
+                                                      Margin="2,2,0,2"
+                                                      DockPanel.Dock="Left" Background="Yellow"
+                                                      prism:RegionManager.RegionName="{x:Static inf:RegionNames.NavigationSectionRegion}" />-->
+    </Grid>
+</Window>
